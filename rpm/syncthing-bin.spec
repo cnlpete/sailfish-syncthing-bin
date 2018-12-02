@@ -1,7 +1,7 @@
 %define binname syncthing
 Name:		%{binname}-bin
 # Epoch:		1
-Version:	0.14.39
+Version:	0.14.52
 Release:		1
 Summary:	Open Source Continuous Replication / Cluster Synchronization Thing
 License:	MPLv2
@@ -29,6 +29,8 @@ Source3:    %{binname}-resume.service
 
 # BuildRequires: go
 # BuildRequires: git
+BuildRequires: curl
+BuildRequires: tar
 
 #Requires(pre):     
 Requires(post):    	systemd
