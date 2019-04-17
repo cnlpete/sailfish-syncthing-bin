@@ -4,8 +4,8 @@ connect:
 > ssh -p 2222 -i ~/SailfishOS/vmshare/ssh/private_keys/engine/mersdk mersdk@localhost
 
 and run the builds:
-> mb2 -t SailfishOS-3.0.0.8-armv7hl build
-> mb2 -t SailfishOS-3.0.0.8-i486 build
+> mb2 -t SailfishOS-3.0.2.8-armv7hl build
+> mb2 -t SailfishOS-3.0.2.8-i486 build
 
 
 You can check the available targets using:
