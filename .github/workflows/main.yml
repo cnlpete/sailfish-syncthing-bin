@@ -25,7 +25,7 @@ jobs:
       uses: coderus/github-sfos-build@master
       with:
         arch: armv7hl
-        release: 3.4.0.22
+        release: latest
 
     - name: Upload build result
       uses: actions/upload-artifact@v2
@@ -38,7 +38,7 @@ jobs:
       uses: coderus/github-sfos-build@master
       with:
         arch: i486
-        release: 3.4.0.22
+        release: latest
       
     - name: Upload build result
       uses: actions/upload-artifact@v2
