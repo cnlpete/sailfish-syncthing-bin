@@ -9,12 +9,18 @@ Group:		Applications/System
 URL:		https://syncthing.net/
 
 %define arm_basename %{binname}-linux-arm-v%{version}
+%define arm64_basename %{binname}-linux-arm64-v%{version}
 %define i486_basename %{binname}-linux-386-v%{version}
 %define remote_url https://github.com/syncthing/%{binname}/releases/download/v%{version}/
 %define __os_install_post %{nil}
 
 %ifarch armv7hl
 	%define basenam %{arm_basename}
+	%define tgz %{basenam}.tar.gz
+%endif
+
+%ifarch aarch64
+	%define basenam %{arm64_basename}
 	%define tgz %{basenam}.tar.gz
 %endif
 
