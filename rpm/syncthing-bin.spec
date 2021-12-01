@@ -1,7 +1,7 @@
 %define binname syncthing
 Name:		%{binname}-bin
 # Epoch:		1
-Version:	1.18.2
+Version:	1.18.4
 Release:		1
 Summary:	Open Source Continuous Replication / Cluster Synchronization Thing
 License:	MPLv2
