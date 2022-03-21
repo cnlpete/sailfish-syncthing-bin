@@ -52,7 +52,8 @@ Syncthing replaces proprietary sync and cloud services with something open, trus
 echo Prep
 #%setup -q
 
-%build 
+%build
+mkdir -p rpm
 cd rpm
 curl -L -O %{remote_url}%{basenam}.tar.gz
 
