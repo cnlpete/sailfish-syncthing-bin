@@ -1,3 +1,6 @@
+
+[![](https://github.com/cnlpete/sailfish-syncthing-bin/actions/workflows/main.yml/badge.svg)](https://github.com/cnlpete/sailfish-syncthing-bin/actions/workflows/main.yml)
+
 Build it using the virtualmachine:
 
 connect:
