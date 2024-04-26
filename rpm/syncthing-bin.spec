@@ -13,6 +13,8 @@ URL:		https://syncthing.net/
 %define i486_basename %{binname}-linux-386-v%{version}
 %define remote_url https://github.com/syncthing/%{binname}/releases/download/v%{version}/
 %define __os_install_post %{nil}
+# See https://forum.sailfishos.org/t/13153/23?u=olf :
+%define _binary_payload w2.xzdio
 
 %ifarch armv7hl
 	%define basenam %{arm_basename}
