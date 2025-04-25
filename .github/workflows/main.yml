@@ -19,7 +19,7 @@ jobs:
         arch: ['armv7hl', 'aarch64', 'i486']
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         submodules: true
 
@@ -27,13 +27,13 @@ jobs:
       run: mkdir output
 
     - name: Build (${{ matrix.arch }})
-      uses: coderus/github-sfos-build@master
+      uses: coderus/github-sfos-build@old-stable
       with:
         arch: ${{ matrix.arch }}
-        release: 4.5.0.16
+        release: 4.3.0.12
 
     - name: Upload RPM (${{ matrix.arch }})
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: rpm-${{ matrix.arch }}
         path: RPMS
